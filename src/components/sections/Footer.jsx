@@ -5,6 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -88,20 +89,20 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>Chinmay puhan</Logo>
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experience">Experience</NavLink>
+          {/* <NavLink href="#Experience">Experience</NavLink> */}
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
+            {/* <FacebookIcon /> */}
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <TwitterIcon />
+          <SocialMediaIcon href={Bio.git} target="display">
+            <GitHubIcon />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedInIcon />
@@ -110,7 +111,7 @@ const Footer = () => {
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Rishav Chanda. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Chinmay Puhan. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
